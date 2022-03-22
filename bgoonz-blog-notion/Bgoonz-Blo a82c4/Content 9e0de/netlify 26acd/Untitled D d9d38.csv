@@ -1,0 +1,14 @@
+﻿Title,name,"Post type identifier, used in routes. Must be unique."
+,label,What the admin UI calls the post type.
+,folder,"Where files of this type are stored, relative to the repo root."
+,create,Set to true to allow users to create new files in this collection.
+,slug,"Template for filenames. {{year}}, {{month}}, and {{day}} pulls from the post's date field or save date. {{slug}} is a url-safe version of the post's title. Default is simply {{slug}}."
+,fields,"Fields listed here are shown as fields in the content editor, then saved as front matter at the beginning of the document (except for body, which follows the front matter). Each field contains the following properties:
+
+• label: Field label in the editor UI.
+
+• name: Field name in the document front matter.
+
+• widget: Determines UI style and value data type (details below).
+
+• default (optional): Sets a default value for the field."

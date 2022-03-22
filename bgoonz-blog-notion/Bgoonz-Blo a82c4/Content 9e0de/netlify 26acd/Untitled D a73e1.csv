@@ -1,0 +1,12 @@
+﻿These generators,store static files in
+"Jekyll, GitBook",/ (project root)
+"Hugo, Gatsby, Nuxt, Gridsome, Zola, Sapper",/static
+Next,/public
+"Hexo, Middleman, Jigsaw",/source
+Spike,/views
+Wyam,/input
+Pelican,/content
+VuePress,/.vuepress/public
+Elmstatic,/_site
+11ty,/_site
+preact-cli,/src/static

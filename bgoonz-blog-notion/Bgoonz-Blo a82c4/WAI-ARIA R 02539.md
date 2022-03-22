@@ -1,0 +1,59 @@
+# WAI-ARIA Roles - Accessibility | MDN
+
+[https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)
+
+![mdn-social-share.0ca9dbda.png](WAI-ARIA%20R%2002539/mdn-social-share.0ca9dbda.png)
+
+This page lists reference pages covering all the WAI-ARIA roles discussed on MDN. For a full list of roles, see [Using ARIA: Roles, States, and Properties](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques)
+
+ARIA roles provide semantic meaning to content, allowing screen readers and other tools to present and support interaction with object in a way that is consistent with user expectations of that type of object. ARIA roles can be used to describe elements that don't natively exist in HTML or exist but don't yet have full browser support.
+
+By default, many semantic elements in HTML have a role; for example, `<input type="radio">` has the "radio" role. Non-semantic elements in HTML do not have a role; `<div>` and `<span>` without added semantics return *null*. The `role` attribute can provide semantics.
+
+ARIA roles are are added to HTML elements using `role="`*role type*`"`, where *role type* is the name of a role in the ARIA specification. Some roles require the inclusion of associated ARIA states or properties; others are only valid in association with other roles.
+
+For example, `<ul role="tabpanel">` will be announced as a 'tab panel' by screen readers. However, if the tab panel doesn't have nested tabs, the element with the tabpanel role is not in fact a tab panel and accessibility has actually been negatively impacted.
+
+The [ARIA states and properties](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes) associated with each role are included in the role's pages, with each attribute also having a dedicated page.
+
+There are 6 categories of ARIA roles:
+
+Document Structure roles are used to provide a structural description for a section of content. Most of these roles should no longer be used as browsers now support semantic HTML element with the same meaning. The roles without HTML equivalents, such as presentation, toolbar and tooltip roles, provide information on the document structure to assistive technologies such as screen readers as equivalent native HTML tags are not available.
+
+For most document structure roles, semantic HTML equivalent elements are available and supported. Avoid using [application](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/application_role), [article](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/article_role) (use `[<article>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)`), [cell](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/cell_role) (use `[<td>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td)`), [columnheader](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/columnheader_role) (use [<th scope="col">](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th)), [definition](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/definition_role) (use `[<dd>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd)` in a `[<dl>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl)`), [directory](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/directory_role), [document](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/document_role), [figure](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/figure_role) (use `[<figure>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure)` instead), [group](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/group_role), [heading](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/heading_role) (use `[<h1>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)` thru `[<h6>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)`), [img](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/img_role) (use `[<img>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)` or `[<picture>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture)` instead), [list](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/list_role) (use either `[<ul>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul)` or `[<ol>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol)` instead), [listitem](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/listitem_role) (use `[<li>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)` instead), [meter](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/meter_role) (use `[<meter>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter)` instead), [row](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/row_role) (use the `[<tr>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr)` with `[<table>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)`), [rowgroup](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/rowgroup_role) (use `[<thead>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead)`, `[<tfoot>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot)` and `[<tbody>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody)`), [rowheader](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/rowheader_role) (use [<tr col="row">](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr)), [separator](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/separator_role) (use `[<hr>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr)` if it doesn't have focus), [table](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/table_role) (use `[<table>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)`), and [term](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/term_role) (use `[<dfn>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn)` or `[<dt>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt)` in a `[<dl>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl)`). These are included for completeness, but in most cases are rarely, if ever, useful.
+
+The various widget role are used to define common interactive patterns. Similar to the document structure roles, some of these roles duplicate the semantics of native HTML elements that are well supported, and should not be used. The difference between the two lists is that, generally, the widget roles require JavaScript interaction and the document structure roles don't necessarily.
+
+- [scrollbar](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/scrollbar_role)
+- [searchbox](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/searchbox_role)
+- [separator](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/separator_role) (when focusable)
+- [spinbutton](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/spinbutton_role)
+- [switch](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/switch_role)
+- [tabpanel](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tabpanel_role)
+- [treeitem](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/treeitem_role)
+
+Avoid using [button](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role), [checkbox](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/checkbox_role), [gridcell](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/gridcell_role), [link](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/link_role), [menuitem](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/menuitem_role), [menuitemcheckbox](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/menuitemcheckbox_role), [menuitemradio](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/menuitemradio_role), [option](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/option_role), [progressbar](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/progressbar_role), [radio](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/radio_role), and [textbox](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/textbox_role), which we've included for completeness. For most, semantic equivalents with accessible interactivity are available and supported. See the individual role documention for more information.
+
+### Composite widget roles
+
+Avoid using [grid](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/grid_role), [listbox](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/listbox_role), and [radiogroup](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/radio_role), which we've included for completeness. See the individual role documention for more information.
+
+Note that there is also a widget role (`role="widget"`), which is an abstract role and not in the widget role category.
+
+Landmark roles provide a way to identify the organization and structure of a web page. By classifying and labeling sections of a page, structural information conveyed visually through layout is represented programmatically. Screen readers use landmark roles to provide keyboard navigation to important sections of a page. Use these sparingly. Too many landmark roles create "noise" in screen readers, making it difficult to understand the overall layout of the page.
+
+- [banner](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/banner_role) (document `[<header>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)`)
+- [complementary](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/complementary_role) (`[<aside>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside)`)
+- [form](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/form_role) (`[<form>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)`)
+- [region](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/region_role) (`[<section>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section)`)
+- [search](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/search_role)
+
+Live Region roles are used to define elements with content that will be dynamically changed. Sighted users can see dynamic changes when they are visually noticeable. These roles help low vision and blind users know if content has been updated. Assistive technologies, like screen readers, can be made to announce dynamic content changes:
+
+Window roles define sub-windows to the main document window, within the same window, such as pop up modal dialogs:
+
+Abstract roles are only intended for use by browsers to help organize and streamline a document. They should not be used by developers writing HTML markup. Doing so will not result in any meaningful information being conveyed to assistive technologies or to users.
+
+**Note:** Don't use abstract roles in your sites and applications. They are for use by browsers. They are included for reference only.
+
+**Warning:** "Abstract roles are used for the ontology. Authors **MUST NOT** use abstract roles in content." - The WAI-ARIA specification

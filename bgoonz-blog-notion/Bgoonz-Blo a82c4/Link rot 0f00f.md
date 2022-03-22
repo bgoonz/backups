@@ -1,0 +1,11 @@
+# Link rot
+
+[https://en.wikipedia-on-ipfs.org/wiki/Link_rot](https://en.wikipedia-on-ipfs.org/wiki/Link_rot)
+
+A number of studies have examined the prevalence of link rot within the [World Wide Web](https://en.wikipedia-on-ipfs.org/wiki/World_Wide_Web), in academic literature that uses [URLs](https://en.wikipedia-on-ipfs.org/wiki/URL) to cite web content, and within [digital libraries](https://en.wikipedia-on-ipfs.org/wiki/Digital_library).
+
+A 2003 study found that on the Web, about one link out of every 200 broke each week, suggesting a [half-life](https://en.wikipedia-on-ipfs.org/wiki/Half-life) of 138 weeks. This rate was largely confirmed by a 2016–2017 study of links in [Yahoo! Directory](https://en.wikipedia-on-ipfs.org/wiki/Yahoo!_Directory) (which had stopped updating in 2014 after 21 years of development) that found the half-life of the directory's links to be two years.
+
+A 2004 study showed that subsets of Web links (such as those targeting specific file types or those hosted by academic institution) could have dramatically different half-lives. The URLs selected for publication appear to have greater longevity than the average URL. A 2015 study by Weblock analyzed more than 180,000 links from references in the full-text corpora of three major open access publishers and found a half-life of about 14 years, generally confirming a 2005 study that found that half of the [URLs](https://en.wikipedia-on-ipfs.org/wiki/Uniform_Resource_Locator) cited in [D-Lib Magazine](https://en.wikipedia-on-ipfs.org/wiki/D-Lib_Magazine) articles were active 10 years after publication. Other studies have found higher rates of link rot in academic literature but typically suggest a half-life of four years or greater. A 2013 study in *[BMC Bioinformatics](https://en.wikipedia-on-ipfs.org/wiki/BMC_Bioinformatics)* analyzed nearly 15,000 links in abstracts from Thomson Reuters's [Web of Science](https://en.wikipedia-on-ipfs.org/wiki/Web_of_Science) citation index and found that the median lifespan of web pages was 9.3 years, and just 62% were archived.
+
+A 2002 study suggested that link rot within digital libraries is considerably slower than on the web, finding that about 3% of the objects were no longer accessible after one year (equating to a half-life of nearly 23 years).

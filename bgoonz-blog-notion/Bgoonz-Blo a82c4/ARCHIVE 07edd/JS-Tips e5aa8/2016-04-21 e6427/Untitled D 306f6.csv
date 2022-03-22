@@ -1,0 +1,4 @@
+﻿Solution,Paramters,Results
+Solution 1: Regular Expression,'‘ 'filename'  ‘filename.txt'  ‘.hiddenfile'  ‘filename.with.many.dots.ext',undefined  undefined  ‘txt'  ‘hiddenfile'  ‘ext'
+Solution 2: String split,'‘ 'filename'  ‘filename.txt'  ‘.hiddenfile'  ‘filename.with.many.dots.ext',''  ‘filename'  ‘txt'  ‘hiddenfile'  ‘ext'
+"Solution 3: String slice, lastIndexOf",'‘ 'filename'  ‘filename.txt'  ‘.hiddenfile'  ‘filename.with.many.dots.ext',''  ''  ‘txt'  ''  ‘ext'

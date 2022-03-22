@@ -1,0 +1,5 @@
+﻿Title,Add two numbers together or combine two strings.,+,6 + 9;'Hello ' + 'world!';
+,These do what you'd expect them to do in basic math.,"-, *, /",9 - 3;8 * 2; // multiply in JS is an asterisk9 / 3;
+,As you've seen already: this assigns a value to a variable.,=,let myVariable = 'Bob';
+,This performs a test to see if two values are equal. It returns a true/false (Boolean) result.,===,let myVariable = 3;myVariable === 4;
+,"Not, Does-not-equal","This returns the logically opposite value of what it precedes. It turns a true into a false, etc.. When it is used alongside the Equality operator, the negation operator tests whether two values are not equal.","!, !=="

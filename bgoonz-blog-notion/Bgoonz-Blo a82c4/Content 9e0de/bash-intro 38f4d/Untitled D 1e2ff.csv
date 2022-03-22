@@ -1,0 +1,5 @@
+﻿Value,Description
+ignorespace,don't save lines which begin with a  character
+ignoredups,don't save lines matching the previous history entry
+ignoreboth,use both ‘ignorespace' and ‘ignoredups'
+erasedups,eliminate duplicates across the whole history
